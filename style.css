@@ -1,0 +1,81 @@
+/* General styles for the class schedule container */
+.class-schedule-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black; /* Default text color */
+}
+
+/* Title styling */
+.class-schedule-container h1 {
+    text-align: center;
+    color: black; /* Black text */
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* List styling */
+.class-schedule-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List item styling */
+.class-schedule-container li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: black; /* Black text */
+}
+
+/* Highlight the text for better readability */
+.class-schedule-container li strong {
+    color: black; /* Black text */
+    font-weight: bold;
+}
+
+/* Hover effect on list items */
+.class-schedule-container li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Text for each class item */
+.class-schedule-container li span {
+    font-size: 16px;
+    color: black; /* Black text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .class-schedule-container {
+        padding: 15px;
+    }
+
+    .class-schedule-container h1 {
+        font-size: 20px;
+    }
+
+    .class-schedule-container li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .class-schedule-container li strong,
+    .class-schedule-container li span {
+        margin-bottom: 5px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

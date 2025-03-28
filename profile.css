@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1a1a1d, #4e4e50);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 5px;
+}
+
+/* Profile Section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #17a2b8;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Button Styling */
+.edit-profile-btn-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.edit-profile-btn {
+    background: #17a2b8;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background: #138496;
+}
+
+/* Class Schedule and Announcements */
+.class-schedule, .announcements {
+    margin-top: 10px;
+}
+
+.class-schedule p, .announcements p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .edit-profile-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .profile-info img {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: #fff;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; /* Adjust the container width */
+    height: 120px; /* Adjust the container height */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Ensure the image does not overflow */
+    border-radius: 50%; /* Make it circular */
+    background: #f0f0f0; /* Optional background for empty space */
+}
+
+.profile-pic {
+    width: 100%; /* Make the image responsive */
+    height: 100%;
+    object-fit: cover; /* Crop the image to fit the circle */
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid #ccc; /* Optional border */
+}
+
+
+.edit-profile-btn-container {
+    margin-top: 15px;
+}
+
+.edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        font-size: 0.9rem;
+    }
+}

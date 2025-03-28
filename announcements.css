@@ -1,0 +1,138 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Announcement Container */
+.announcement-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Announcement List */
+.announcement-list {
+    list-style-type: none;
+}
+
+.announcement-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2980b9;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Back to Dashboard Button */
+.btd {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btd button {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btd button:hover {
+    background-color: #1c5983;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .announcement-item {
+        padding: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btd button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .announcement-item {
+        padding: 8px 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .btd button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,142 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Videos */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout Helpers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Forms */
+input,
+textarea,
+button,
+select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #528FF0;
+    color: #fff;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #528FF0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #406ac1;
+}
+

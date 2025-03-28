@@ -1,0 +1,543 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  /* Dark Mode Toggle */
+  #darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul a:hover {
+    color: #f39c12;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 20;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f39c12;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Profile Icon */
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  nav ul.open li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo img {
+      height: 50px;
+    }
+  
+    nav ul a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-icon {
+      width: 35px;
+      height: 35px;
+    }
+  
+    #darkModeToggle {
+      font-size: 20px;
+    }
+  } 
+  
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  nav ul.open {
+    display: block;
+  }
+  
+  /* Hero Section */
+  .banner {
+    background: url("gym image/main bg.png") no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .join-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  
+  .join-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .stat-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    transition: transform 0.3s;
+  }
+  
+  .stat-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+  
+  .footer-location i,
+  .footer-social i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .footer-social a:hover i {
+    color: #f39c12;
+  }
+  
+  .footer-hours {
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .banner h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 28px;
+    }
+  
+    .banner p {
+      font-size: 16px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-box {
+      margin-bottom: 20px;
+      width: 80%;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner h1 {
+      font-size: 24px;
+    }
+  
+    .banner p {
+      font-size: 14px;
+    }
+  
+    .join-btn {
+      padding: 12px 20px;
+    }
+  } 
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .dark-mode header, .dark-mode nav ul {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-mode .stat-box {
+    background-color: #333;
+    color: white;
+  } 
+   /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  /* Dark Mode Toggle */
+  #darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul a:hover {
+    color: #f39c12;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 20;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f39c12;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Profile Icon */
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 80px;
+  }
+  
+  .footer-location a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .footer-location a:hover {
+    color: #f39c12;
+  }
+  
+  .footer-hours {
+    text-align: right;
+  }
+  
+  .footer-hours h4 {
+    color: #f39c12;
+  }
+  
+  /* Mobile Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #1e1e1e;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  nav ul.open li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      width: 100%;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-location {
+      margin: 20px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo img {
+      height: 50px;
+    }
+  
+    nav ul a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-icon {
+      width: 35px;
+      height: 35px;
+    }
+  
+    #darkModeToggle {
+      font-size: 20px;
+    }
+  } 
+  .footer-location a {
+    color: #f39c12; /* Orange color */
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-location a:hover {
+    color: #fff; /* White on hover */
+  }
+  

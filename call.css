@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Trainer Section */
+.trainer-section {
+    padding: 40px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.trainer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trainer-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.trainer-card h3 {
+    color: #333;
+}
+
+.trainer-card p {
+    color: #777;
+}
+
+.video-call-btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.video-call-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .trainer-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 50px;
+    }
+
+    .trainer-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .video-call-btn {
+        padding: 10px 20px;
+    }
+}

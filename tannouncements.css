@@ -1,0 +1,549 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Videos */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout Helpers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Forms */
+input,
+textarea,
+button,
+select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a.active {
+    text-decoration: underline;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+.trainer-info {
+    display: flex;
+    align-items: center;
+}
+
+.trainer-info span {
+    margin-right: 15px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Announcement list */
+.announcement-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.announcement-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.announcement-list ul {
+    list-style-type: none;
+}
+
+.announcement-list ul li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-list ul li h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.announcement-list ul li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #34495e;
+}
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+.admin-info, .trainer-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.logout-btn {
+    margin-left: 20px;
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.announcement-form {
+    margin-top: 20px;
+}
+
+.announcement-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.announcement-form input, .announcement-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.announcement-form button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.announcement-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.announcement-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .profile-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .announcement-form input,
+    .announcement-form textarea {
+        padding: 8px;
+    }
+
+    .announcement-form button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .announcement-form input,
+    .announcement-form textarea {
+        padding: 8px;
+    }
+
+    .announcement-form button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .sidebar ul li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .announcement-form input,
+    .announcement-form textarea {
+        font-size: 14px;
+    }
+
+    .announcement-form button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .announcement-list li {
+        padding: 10px;
+    }
+
+    .announcement-list h3 {
+        font-size: 1em;
+    }
+
+    .announcement-list p {
+        font-size: 14px;
+    }
+}
+/* Add styles for the announcement form and list */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+}
+
+.sidebar ul li a.active {
+    background-color: #555;
+}
+
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.announcement-form {
+    margin-bottom: 30px;
+}
+
+.announcement-form label,
+.announcement-form input,
+.announcement-form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.announcement-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.announcement-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.announcement-list li {
+    margin-bottom: 15px;
+}
+
+.announcement-list h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.announcement-list p {
+    margin: 5px 0 0;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}

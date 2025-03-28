@@ -1,0 +1,61 @@
+/* Resetting and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.splash-screen {
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Logo Styling */
+.logo {
+    width: 80%;
+    max-width: 400px;
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+/* Welcome Text Styling */
+.welcome-text {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .welcome-text {
+        font-size: 2rem;
+    }
+    .logo {
+        max-width: 300px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
